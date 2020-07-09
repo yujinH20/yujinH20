@@ -1,0 +1,38 @@
+.header {
+  padding: 6px 6px 6px 30px;
+  text-align: left;
+  background: black;
+  text-decoration: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top:0px;
+}
+
+h5 {
+  font-weight: 300;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}

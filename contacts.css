@@ -1,0 +1,84 @@
+.header {
+  padding: 6px 6px 6px 30px;
+  text-align: left;
+  background: black;
+  text-decoration: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 22%;
+}
+.leftcolumn .card {
+  height:680px;
+  background-image: url("./contacts.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 78%;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top:0px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+table,tr,td {
+  border-collapse: collapse;
+}
+td {
+  padding: 0 10px 0 10px;
+}
+tr {
+  height:30px;
+}
+input {
+  border:0;
+  border-bottom:solid 1px black;
+}
+option {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:12px;
+}
+p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:12px;
+}
+button {
+  width:80px;
+  height:40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  float:right;
+  margin-left:10px;
+  background-color:white;
+  border:solid 1px black;
+}
+button:hover {
+  background-color: #eeeeee;
+}
+button:active {
+  background-color:black;
+  color:white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,60 @@
+.header {
+  padding: 6px 6px 6px 30px;
+  text-align: left;
+  background: black;
+  text-decoration: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width:100%;
+  padding:20px;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 0;
+  margin-top:30px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 20px 0 0 28px;
+  line-height:40px;
+}
+.date {
+  margin-top:0;
+  font-weight:400;
+  margin-left:28px;
+}
+.sub {
+  font-weight: 300;
+  margin-left:28px;
+}
+iframe {
+  width:800px;
+  height:450px;
+}
